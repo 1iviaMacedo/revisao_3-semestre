@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="rectangle"></div>
+    <div class="rectangle2"></div>
+    <div class="rectangle3"></div>
+
+    <div>
+        <a href="/list.html"><button class="btn" onclick="welcome()">Acessar Lista</button></a>
+    </div>
+
+    <h1>What I did in my vacations?</h1>
+    <img src="/img/flower.png" class="img">
+
+</body>
+
+<script>
+
+function welcome(){
+    
+}
+
+</script>
+
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        background-color: #80a5b3;
+    }
+
+    .rectangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 50%;
+        height: 60%;
+        opacity: 80%;
+
+        background-color: #ceecf7;
+        border: 5px solid;
+        border-radius: 50px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(45deg , #d1ecf6 , #114d63 , #80a5b3);
+    }
+
+    .btn{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 90%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #114d63;
+        width: 10%;
+        height: 5%;
+
+        background-color: #ceecf7;
+        border-radius: 60px;
+        border-color: #114d63;
+    }
+
+    h1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 200%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .img{
+        background-color: transparent;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 10%;
+
+
+        z-index: 2;
+    }
+
+</style>
+
+</html>
