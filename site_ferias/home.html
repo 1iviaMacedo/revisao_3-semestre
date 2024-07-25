@@ -9,7 +9,6 @@
     
     <div class="rectangle"></div>
     <div class="rectangle2"></div>
-    <div class="rectangle3"></div>
 
     <div>
         <a href="list.html"><button class="btn" onclick="welcome()">Acessar Lista</button></a>
@@ -23,7 +22,7 @@
 <script>
 
 function welcome(){
-    
+
 }
 
 </script>
@@ -48,8 +47,22 @@ function welcome(){
         background-color: #ceecf7;
         border: 5px solid;
         border-radius: 50px;
-        border-image-slice: 1;
-        border-image-source: linear-gradient(45deg , #d1ecf6 , #114d63 , #80a5b3);
+        z-index: 1;
+    }
+
+    .rectangle2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 55%;
+        height: 63%;
+        opacity: 80%;
+        border-radius: 50px;
+
+        background-image: linear-gradient(45deg , #d1ecf6 , #114d63 , #80a5b3);
+        z-index: 0;
     }
 
     .btn{
@@ -67,6 +80,7 @@ function welcome(){
         background-color: #ceecf7;
         border-radius: 60px;
         border-color: #114d63;
+        z-index: 2;
     }
 
     h1{
@@ -77,6 +91,7 @@ function welcome(){
 
         font-size: 200%;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        z-index: 2;
     }
 
     .img{
@@ -87,6 +102,7 @@ function welcome(){
         transform: translate(-50%, -50%);
 
         width: 10%;
+        z-index: 2;
 
 
         z-index: 2;
